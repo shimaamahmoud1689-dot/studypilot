@@ -1,0 +1,852 @@
+[
+    {
+        "chunk_id": 1,
+        "page": 1,
+        "text": "AGENT BASED SYSTEMS AI314 Faculty of Computers &Artificial Intelligence, Sphinx University University Fall 2026"
+    },
+    {
+        "chunk_id": 2,
+        "page": 2,
+        "text": "Course Instructor Dr. Amr A. Hassanain Assistant Professor, Biomedical Engineering & Artificial Intelligence Department of Artificial Intelligence Email [amr_medical21@yahoo.com] Office Computers & Artificial Intelligence Building, Room 402 Office Hours Mondays , 1:00 AM - 3:00 PM Phone (002) 01097810576"
+    },
+    {
+        "chunk_id": 3,
+        "page": 3,
+        "text": "Birds flocking in the sky"
+    },
+    {
+        "chunk_id": 4,
+        "page": 4,
+        "text": "Aswarm of drones moving in formation"
+    },
+    {
+        "chunk_id": 5,
+        "page": 5,
+        "text": "“Who do you think is the leader here? How do they know where to go?” (Most will assume there’s a leader—but the answer is that no single bird/drone is in charge. The coordination emerges from local interactions.) This is the power of agents—independent entities that sense, decide, and act locally. Yet, when combined, they can solve problems far too complex for any single one to handle.” https://www.mentimeter.com/app/presentation/alnnyr3dh8giecos5eto3sh2 dkd58bc6/edit?question=27kog2gj6sgy"
+    },
+    {
+        "chunk_id": 6,
+        "page": 6,
+        "text": "Introduction to Agents and Multi- Agent Systems Welcome to the fascinating world of intelligent agents and multi-agent systems— the foundation of autonomous computing and distributed artificial intelligence."
+    },
+    {
+        "chunk_id": 7,
+        "page": 7,
+        "text": "Primary Course Reference"
+    },
+    {
+        "chunk_id": 8,
+        "page": 8,
+        "text": "Course Overview 01 Agents & Properties Understanding what makes software truly intelligent and autonomous 02 Multi-Agent Systems How multiple agents collaborate to solve complex distributed problems 03 Agent Architectures Internal designs and cognitive models that drive agent behavior 04 Communication & Decision-Making Protocols, coordination, and strategic interaction between agents 05 Game-Theoretic Approaches Mathematical models for competitive and cooperative scenarios This course is designed for computer science students who want to understand the cutting-edge field where AI meets distributed systems, creating the foundation for tomorrow's autonomous technologies."
+    },
+    {
+        "chunk_id": 9,
+        "page": 8,
+        "text": "the foundation for tomorrow's autonomous technologies."
+    },
+    {
+        "chunk_id": 10,
+        "page": 9,
+        "text": "Origins •Trends in Computer Science •Agents and Multiagent Systems •2 views of the Field"
+    },
+    {
+        "chunk_id": 11,
+        "page": 10,
+        "text": "Computing now-a-days ⚫Internet Technology ◼Internet 2.0, Broadband access, exploding usage… ⚫Mobile “Telephony” Technology ◼3G, iMode, WAP, Wireless PDAs, Bluetooth… ⚫Software Technology ◼JavaBeans, Soap, UDDI, JINI… ⚫Web Technology ◼XML, RDF, Servlets, JavaBeans, “Semantic Web” ⚫AI ◼Reasoning, Knowledge Representation, Agents…"
+    },
+    {
+        "chunk_id": 12,
+        "page": 11,
+        "text": "Origins of MAS ⚫Five ongoing trends have marked the history of computing [M. Wooldridge]: ◼ubiquity; ◼interconnection; ◼intelligence; ◼delegation; and ◼human-orientation"
+    },
+    {
+        "chunk_id": 13,
+        "page": 12,
+        "text": "What is an Agent? An agent is an autonomous computational entity that perceives its environment through sensors and acts upon it through actuators to achieve specific goals. Unlike traditional programs that simply execute predetermined instructions, agents are adaptive and intelligent. Key components include: • Sensors - gather information from the environment • Actuators - perform actions that affect the environment • Decision-making system - processes input and selects actions"
+    },
+    {
+        "chunk_id": 14,
+        "page": 13,
+        "text": "The Agent-Environment Loop Environment Percepts Sensor Input Agent Decision Actuator Actions"
+    },
+    {
+        "chunk_id": 15,
+        "page": 14,
+        "text": "Key Components of an Agent Sensors Input mechanisms that gather information from the environment, ranging from simple temperature readings to complex camera systems and data streams. Decision-Making Unit The cognitive core that processes sensory information, evaluates options, and determines appropriate actions based on goals and current state. Actuators Output mechanisms that execute decisions and perform actions in the environment, from mechanical movements to digital communications."
+    },
+    {
+        "chunk_id": 16,
+        "page": 15,
+        "text": "The Perception-Action Cycle At the heart of every agent lies the fundamental perception-action cycle. The agent continuously observes its environment, processes this information through its internal reasoning mechanisms, and executes actions that modify the environment—creating a feedback loop that enables learning and adaptation. This cycle distinguishes agents from passive software components, making them proactive participants in their environments rather than mere tools awaiting commands."
+    },
+    {
+        "chunk_id": 17,
+        "page": 16,
+        "text": "Four Fundamental Characteristics of Agents Autonomy Operates independently without direct human intervention, making decisions based on internal goals and environmental conditions. Reactivity Responds appropriately and in a timely manner to environmental changes and unexpected situations. Proactiveness Takes initiative to achieve goals, planning and executing actions rather than merely responding to stimuli. Social Ability Communicates and coordinates with other agents or humans using established protocols and languages."
+    },
+    {
+        "chunk_id": 18,
+        "page": 17,
+        "text": "Real-World Agent Example: Self-Driving Car Reactivity Instantly responds to pedestrians, traffic signals, and road conditions using cameras, LIDAR, and radar sensors. Proactiveness Plans optimal routes, anticipates traffic patterns, and makes strategic lane changes to reach destinations efficiently. Social Ability Communicates with other vehicles, traffic infrastructure, and cloud services to share traffic data and coordinate movements. Autonomy Makes independent driving decisions, handles unexpected situations, and operates without constant human oversight."
+    },
+    {
+        "chunk_id": 19,
+        "page": 18,
+        "text": "What are Multi-Agent Systems? A Multi-Agent System (MAS) is a collection of multiple autonomous agents that interact within a shared environment to solve problems that are beyond the capabilities of individual agents. No Central Controller Intelligence and coordination emerge from the interactions between agents rather than top- down control. Distributed Problem-Solving Complex tasks are decomposed and solved collaboratively across multiple specialized agents. Flexible Interaction Agents can cooperate, compete, or negotiate depending on their goals and the system's requirements."
+    },
+    {
+        "chunk_id": 20,
+        "page": 19,
+        "text": "Cooperative vs Competitive MAS Cooperative Systems Agents share common goals and work together to maximize overall system performance. Examples include: • Search and rescue robot teams • Distributed sensor networks • Collaborative filtering systems Competitive Systems Agents pursue individual goals that may conflict with others, requiring strategic thinking and game theory. Examples include: • Algorithmic trading systems • Resource allocation markets • Competitive gaming AI"
+    },
+    {
+        "chunk_id": 21,
+        "page": 20,
+        "text": "MAS Applications in Robotics Swarm robotics represents one of the most exciting applications of multi-agent systems. Individual robots with simple capabilities can achieve complex collective behaviors through local interactions and emergent coordination. Search & Rescue Drones coordinate to cover large areas efficiently, sharing information about survivors and hazards. Construction Robot teams collaborate to build structures, each contributing specialized skills and capabilities. Environmental Monitoring Sensor networks collect and analyze environmental data across vast geographic regions."
+    },
+    {
+        "chunk_id": 22,
+        "page": 21,
+        "text": "MAS in Economics and Finance 1 Electronic Auctions Automated bidding agents represent buyers and sellers, optimizing strategies in real-time to maximize utility and minimize costs. 2 Algorithmic Trading High-frequency trading systems execute thousands of transactions per second, analyzing market patterns and competing for profitable opportunities. 3 Supply Chain Management Agents coordinate across suppliers, manufacturers, and retailers to optimize inventory, reduce costs, and improve delivery times."
+    },
+    {
+        "chunk_id": 23,
+        "page": 22,
+        "text": "Healthcare Applications Intelligent Hospital Systems Multi-agent systems transform healthcare delivery by coordinating complex hospital operations, patient care, and resource allocation. Agent-based solutions can: • Optimize staff scheduling across departments • Coordinate patient flow and bed management • Monitor patient vital signs and alert medical staff • Manage medical equipment and supply inventories • Support clinical decision-making with real-time data These systems reduce wait times, improve patient outcomes, and maximize resource utilization while maintaining high standards of care."
+    },
+    {
+        "chunk_id": 24,
+        "page": 23,
+        "text": "Network and Traffic Control Modern network systems rely heavily on multi-agent architectures to manage complexity and ensure optimal performance. In computer networks, routing protocols act as agents that discover paths, balance loads, and adapt to network changes autonomously. Dynamic Routing Network agents continuously update routing tables based on traffic patterns and link availability. Traffic Management Smart traffic systems coordinate signal timing to optimize flow and reduce congestion. Security Monitoring Distributed security agents detect and respond to threats across network infrastructure."
+    },
+    {
+        "chunk_id": 25,
+        "page": 24,
+        "text": "Social Simulation and Modeling Epidemic Modeling Agents represent individuals with different behaviors, health states, and social connections to simulate disease transmission and intervention strategies. Crowd Dynamics Virtual pedestrians with individual goals and behaviors help design safer public spaces and predict emergency evacuation patterns. Market Simulation Economic agents with diverse strategies and preferences model market behavior, bubble formation, and regulatory impacts."
+    },
+    {
+        "chunk_id": 26,
+        "page": 25,
+        "text": "Case Study: Google Maps as MAS The System Every smartphone user becomes an agent, contributing real-time location and speed data. The system aggregates millions of individual data points to create dynamic traffic intelligence. Emergent Intelligence No central traffic controller exists— instead, collective intelligence emerges from individual user behaviors and data contributions. 01 Data Collection Individual phones as sensing agents 02 Processing Algorithmic agents analyze patterns 03 Route Optimization Navigation agents provide recommendations 04 Feedback Loop User actions improve system knowledge"
+    },
+    {
+        "chunk_id": 27,
+        "page": 26,
+        "text": "Why Study Agents? Understanding agents and multi-agent systems is crucial for the future of technology. As our world becomes increasingly connected and automated, the principles you'll learn in this course form the foundation for the next generation of intelligent systems."
+    },
+    {
+        "chunk_id": 28,
+        "page": 27,
+        "text": "Future Relevance & Career Impact Core to Modern AI Agent-based approaches are fundamental to artificial intelligence, machine learning systems, and autonomous decision-making technologies that are reshaping industries worldwide. Distributed Computing As systems become more distributed and decentralized, understanding how autonomous components interact becomes essential for building scalable, resilient architectures. Internet of Things (IoT) Billions of connected devices require agent-based coordination and communication protocols to function effectively as cohesive systems."
+    },
+    {
+        "chunk_id": 29,
+        "page": 28,
+        "text": "The Foundation of Autonomous Systems Artificial Intelligence Agents embody AI principles in practical, deployable systems that can reason, learn, and adapt in real-world environments. Distributed Systems Multi-agent architectures provide robust, scalable solutions for distributed computing challenges and fault tolerance. Internet of Things IoT devices increasingly act as intelligent agents, making autonomous decisions and coordinating with other smart devices. These technologies converge to create the autonomous systems that will define the next generation of computing, from smart homes to autonomous factories."
+    },
+    {
+        "chunk_id": 30,
+        "page": 29,
+        "text": "Foundational Technologies Robotics E-commerce Smart Cities Autonomous Vehicles Agent and multi-agent system principles are the building blocks for breakthrough innovations across multiple domains. From autonomous robots working in warehouses to smart city infrastructure coordinating traffic and energy distribution, these technologies rely on the concepts we'll explore throughout this course. Understanding these foundations positions you at the forefront of technological innovation, whether you pursue careers in AI research, robotics engineering, distributed systems design, or emerging fields we haven't yet imagined."
+    },
+    {
+        "chunk_id": 31,
+        "page": 30,
+        "text": "Industry Applications and Career Opportunities Autonomous Vehicles Self-driving cars, delivery robots, and aerial drones all rely on agent-based architectures for navigation and decision-making. Smart Systems From virtual assistants to smart home automation, intelligent agents are becoming ubiquitous in consumer technology. E-Commerce Recommendation systems, price optimization, and supply chain management all leverage multi-agent approaches for competitive advantage. Industry 4.0 Manufacturing systems use agent-based control for flexible production, quality control, and predictive maintenance."
+    },
+    {
+        "chunk_id": 32,
+        "page": 31,
+        "text": "Course Structure Overview This 14-week course is carefully designed to build your understanding progressively, from fundamental concepts to advanced applications and real- world projects. Each phase builds upon previous knowledge while introducing new challenges and practical applications. By the end, you'll have both theoretical understanding and hands-on experience with agent-based systems."
+    },
+    {
+        "chunk_id": 33,
+        "page": 32,
+        "text": "Weeks 1 -2: Agents and Environments Foundation Phase We begin with the fundamental concepts that define intelligent agents and their relationship with their operating environments. Key Topics: • Agent properties and characteristics • Environment types and complexity • Performance measures and rationality • Simple reflex vs. goal-based agents Programming assignment: Implement a simple reactive agent in Python that navigates a grid world environment."
+    },
+    {
+        "chunk_id": 34,
+        "page": 33,
+        "text": "Weeks 3-5: Agent Architectures 1 Week 3: Reactive Architectures Behavior-based systems, subsumption architecture, and real-time response mechanisms for dynamic environments. 2 Week 4: Cognitive Architectures Belief-Desire-Intention (BDI) model, planning systems, and reasoning mechanisms for complex goal achievement. 3 Week 5: Hybrid Approaches Layered architectures that combine reactive and deliberative components for robust, adaptable agent behavior. This phase explores the internal designs that enable agents to process information, make decisions, and execute actions effectively in complex environments."
+    },
+    {
+        "chunk_id": 35,
+        "page": 34,
+        "text": "Weeks 6-8: Communication and Interaction Understanding how agents coordinate and collaborate is crucial for building effective multi-agent systems. This phase covers the protocols, languages, and mechanisms that enable meaningful agent interaction. 1 Communication Protocols Message-passing systems, synchronization mechanisms, and distributed coordination protocols for reliable agent communication. 2 Agent Communication Languages FIPA-ACL, ontologies, and semantic understanding for sophisticated inter- agent dialogue and knowledge sharing. 3 Coordination Mechanisms Task allocation, consensus algorithms, and distributed problem-solving techniques for collaborative agent systems."
+    },
+    {
+        "chunk_id": 36,
+        "page": 35,
+        "text": "Weeks 9-1 1 : Game Theory and Decision-Making When agents have competing or conflicting interests, strategic thinking becomes essential. This phase introduces mathematical frameworks for modeling and analyzing agent interactions. Strategic Games Nash equilibria, dominant strategies, and solution concepts for multi-agent decision scenarios. Cooperative Game Theory Coalition formation, Shapley values, and fair allocation mechanisms for collaborative agent systems. Mechanism Design Auction theory, incentive compatibility, and market-based coordination for economic agent interactions. Evolutionary Approaches Population dynamics, evolutionary stable strategies, and adaptive behavior in agent populations."
+    },
+    {
+        "chunk_id": 37,
+        "page": 35,
+        "text": "behavior in agent populations."
+    },
+    {
+        "chunk_id": 38,
+        "page": 36,
+        "text": "Weeks 1 2-1 3: Learning and Simulation Adaptive Intelligence The final theoretical phase explores how agents can learn and adapt their behavior over time through experience and interaction with their environment and other agents. Learning Topics: • Reinforcement learning in multi-agent settings • Social learning and imitation • Evolutionary algorithms for agent behavior • Online adaptation and concept drift"
+    },
+    {
+        "chunk_id": 39,
+        "page": 37,
+        "text": "Week 1 4: Case Studies and Projects The culmination of the course brings together all concepts through real-world applications and student projects that demonstrate mastery of agent-based system design and implementation. Project Presentations Students showcase their multi-agent system implementations, demonstrating creativity, technical skill, and problem-solving ability. Industry Case Studies Analysis of successful commercial applications, discussing design decisions, challenges overcome, and lessons learned. Research Frontiers Exploration of cutting-edge research directions and emerging applications in the rapidly evolving field of agent systems."
+    },
+    {
+        "chunk_id": 40,
+        "page": 38,
+        "text": "Assessment Methods 1 5% Programming Assignments Hands-on implementation of agent behaviors and multi-agent coordination protocols. 20% Midterm Examination Comprehensive test covering fundamental concepts, architectures, and theoretical frameworks. 40% Final Examination Comprehensive test covering fundamental concepts, architectures, and theoretical frameworks. 1 5% Class Participation Active engagement in discussions, peer reviews, and collaborative learning activities. 1 0% Research Paper Review Critical analysis of current research papers in multi-agent systems and related fields."
+    },
+    {
+        "chunk_id": 41,
+        "page": 39,
+        "text": "Programming Tools and Frameworks Throughout the course, you'll gain hands-on experience with industry-standard tools and frameworks used in agent-based system development. Python with AgentPy Modern Python framework for agent-based modeling with built-in visualization and analysis capabilities. JADE Platform Java-based middleware for developing distributed multi-agent applications with FIPA compliance. NetLogo Environment User-friendly platform for exploring agent-based models and complex adaptive systems through simulation. Custom Simulation Tools Building specialized environments and visualization tools tailored to specific problem domains and applications."
+    },
+    {
+        "chunk_id": 42,
+        "page": 40,
+        "text": "Prerequisites and Preparation Required Background • Data Structures and Algorithms - Essential for implementing efficient agent behaviors • Object-Oriented Programming - Agents are naturally modeled as objects with state and behavior • Basic Probability and Statistics - Important for decision-making under uncertainty • Discrete Mathematics - Logic and graph theory underpin many agent concepts Recommended Preparation • Introduction to Artificial Intelligence • Computer Networks fundamentals • Basic game theory exposure Don't worry! We'll review essential concepts as needed throughout the course The focus"
+    },
+    {
+        "chunk_id": 43,
+        "page": 40,
+        "text": "course The focus"
+    },
+    {
+        "chunk_id": 44,
+        "page": 41,
+        "text": "Course Learning Outcomes By the end of this course, you will have developed comprehensive skills in designing, implementing, and analyzing multi-agent systems. 01 Theoretical Understanding Master fundamental concepts of agent autonomy, reactivity, proactiveness, and social ability in various computational contexts. 02 Architectural Design Design and evaluate different agent architectures for specific problem domains and performance requirements. 03 Communication Protocols Implement robust communication and coordination mechanisms for distributed multi-agent systems. 04 Strategic Analysis Apply game-theoretic principles to analyze and design strategic interactions between competing and cooperating agents. 05 Practical Implementation Build working multi-agent systems using modern frameworks and tools, following software"
+    },
+    {
+        "chunk_id": 45,
+        "page": 41,
+        "text": "interactions between competing and cooperating agents. 05 Practical Implementation Build working multi-agent systems using modern frameworks and tools, following software engineering best practices."
+    },
+    {
+        "chunk_id": 46,
+        "page": 42,
+        "text": "Research Opportunities This course opens doors to exciting research areas at the forefront of computer science, where theoretical advances meet practical applications with real-world impact. Multi-Agent Learning Developing algorithms for agents to learn optimal strategies in dynamic, multi-agent environments. Security in MAS Protecting distributed systems against malicious agents and ensuring privacy in agent communications. Human-Agent Interaction Designing intuitive interfaces and collaboration protocols between humans and autonomous agents. Large-Scale Systems Scaling agent-based solutions to handle thousands or millions of interacting entities. Embodied Agents Integrating agent intelligence with physical robotics and IoT devices in real environments."
+    },
+    {
+        "chunk_id": 47,
+        "page": 42,
+        "text": "Embodied Agents Integrating agent intelligence with physical robotics and IoT devices in real environments."
+    },
+    {
+        "chunk_id": 48,
+        "page": 43,
+        "text": "Ready to Begin? Welcome to an exciting exploration of Agents and Multi-Agent Systems. Over the next 14 weeks, we'll journey from basic concepts to advanced applications, building both theoretical understanding and practical skills. Remember: every expert was once a beginner. Every complex multi-agent system started with someone understanding the fundamentals we'll cover together. Your curiosity, effort, and creativity will determine how far these concepts take you. \"The future belongs to those who understand not just how to build intelligent systems, but how to make them work together.\" Let's begin this journey into the fascinating world of autonomous, intelligent agents!"
+    },
+    {
+        "chunk_id": 49,
+        "page": 43,
+        "text": "but how to make them work together.\" Let's begin this journey into the fascinating world of autonomous, intelligent agents!"
+    },
+    {
+        "chunk_id": 50,
+        "page": 44,
+        "text": "5 trends (1 of 3) ⚫Ubiquity ◼The continual reduction in cost of computing capability has made it possible to introduce processing power into places and devices that would have once been uneconomic ◼As processing capability spreads, computation (and intelligence of a sort) becomes ubiquitous ⚫Interconnection ◼Computer systems today no longer stand alone, but are networked into large distributed systems ◼Since distributed and concurrent systems have become the norm, some researchers are putting forward theoretical models that portray computing as primarily a process of interaction"
+    },
+    {
+        "chunk_id": 51,
+        "page": 44,
+        "text": "a process of interaction"
+    },
+    {
+        "chunk_id": 52,
+        "page": 45,
+        "text": "5 trends (2 of 3) ⚫Intelligence ◼The complexity of tasks that we are capable of automating and delegating to computers has grown steadily, to the limits that we can define as intelligent. ⚫Delegation ◼Computers are doing more for us – without our intervention ◼We are giving control to computers, even in safety critical tasks ⚫Human orientation ◼The movement away from machine-oriented views of programming toward concepts and metaphors that more closely reflect the way we ourselves understand the world ◼Programmers conceptualize and implement software in terms of higher-level – more human-oriented – abstractions"
+    },
+    {
+        "chunk_id": 53,
+        "page": 45,
+        "text": "conceptualize and implement software in terms of higher-level – more human-oriented – abstractions"
+    },
+    {
+        "chunk_id": 54,
+        "page": 46,
+        "text": "5 trends (3 of 3) ⚫Delegation and Intelligence imply the need to build computer systems that can act effectively on our behalf ⚫This implies: ◼The ability of computer systems to act independently ◼The ability of computer systems to act in a way that represents our best interests while interacting with other humans or systems ⚫Interconnection and Distribution have become core motifs in Computer Science ⚫But Interconnection and Distribution, coupled with the need for systems to represent our best interests, implies: ◼Systems that can cooperate and reach agreements (or even compete) with other systems that have different interests (much as we"
+    },
+    {
+        "chunk_id": 55,
+        "page": 46,
+        "text": "◼Systems that can cooperate and reach agreements (or even compete) with other systems that have different interests (much as we do with other people)"
+    },
+    {
+        "chunk_id": 56,
+        "page": 47,
+        "text": "Computer Science progression ⚫These issues were not studied in Computer Science until recently ⚫All of these trends have led to the emergence of a new field in Computer Science: multiagent systems ⚫Wooldridge says that programming has progressed through: ◼machine code; ◼assembly language; ◼machine-independent programming languages; ◼sub-routines; ◼procedures & functions; ◼abstract data types; ◼objects; to agents."
+    },
+    {
+        "chunk_id": 57,
+        "page": 48,
+        "text": "Agents and Multiagent Systems ⚫An agent is a computer system that is capable of independent action on behalf of its user or owner (figuring out what needs to be done to satisfy design objectives, rather than constantly being told) ⚫A multiagent system is one that consists of a number of agents, which interact with one-another ⚫In the most general case, agents will be acting on behalf of users with different goals and motivations ⚫To successfully interact, they will require the ability to cooperate, coordinate, and negotiate with each other, much as people do"
+    },
+    {
+        "chunk_id": 58,
+        "page": 48,
+        "text": "ability to cooperate, coordinate, and negotiate with each other, much as people do"
+    },
+    {
+        "chunk_id": 59,
+        "page": 49,
+        "text": "Agents and Multiagent Systems ⚫Building Agents, we address questions such as: ◼How do you state your preferences to your agent? ◼How can your agent compare different deals from different vendors? What if there are many different parameters? ◼What algorithms can your agent use to negotiate with other agents (to make sure you get a good deal)? ⚫In Multiagent Systems, we address questions such as: ◼How can cooperation emerge in societies of self-interested agents? ◼What kinds of languages can agents use to communicate? ◼How can self-interested agents recognize conflict, and how can they (nevertheless) reach agreement? ◼How can autonomous agents coordinate"
+    },
+    {
+        "chunk_id": 60,
+        "page": 49,
+        "text": "to communicate? ◼How can self-interested agents recognize conflict, and how can they (nevertheless) reach agreement? ◼How can autonomous agents coordinate their activities so as to cooperatively achieve goals?"
+    },
+    {
+        "chunk_id": 61,
+        "page": 50,
+        "text": "Agent Design, Society Design ⚫Two key problems: ◼How do we build agents capable of independent, autonomous action, so that they can successfully carry out tasks we delegate to them? ◼How do we build agents that are capable of interacting (cooperating, coordinating, negotiating) with other agents in order to successfully carry out those delegated tasks, especially when the other agents cannot be assumed to share the same interests/goals? • The first problem is agent design [in this course we cover this in 2. Reasoning in Agents]. • The second is society design (micro/macro) [in this course we cover this in 3."
+    },
+    {
+        "chunk_id": 62,
+        "page": 50,
+        "text": "in 2. Reasoning in Agents]. • The second is society design (micro/macro) [in this course we cover this in 3. Agent- Oriented Methodologies & 4. Coordination and Social Models ]."
+    },
+    {
+        "chunk_id": 63,
+        "page": 51,
+        "text": "Multiagent Systems is Interdisciplinary ⚫The field of Multiagent Systems is influenced and inspired by many other fields: ◼Philosophy ◼Logic ◼Game Theory ◼Economics ◼Social Sciences ◼Ecology ⚫This can be both a strength (infusing well-founded methodologies into the field) and a weakness (there are many different views as to what the field is about)"
+    },
+    {
+        "chunk_id": 64,
+        "page": 52,
+        "text": "2 Views of the Field ⚫Agents as a paradigm for software engineering: Software engineers have derived a progressively better understanding of the characteristics of complexity in software. It is now widely recognized that interaction is probably the most important single characteristic of complex software ⚫Over the last two decades, a major Computer Science research topic has been the development of tools and techniques to model, understand, and implement systems in which interaction is the norm"
+    },
+    {
+        "chunk_id": 65,
+        "page": 53,
+        "text": "2 Views of the Field ⚫Agents as a tool for understanding human societies: Multiagent systems provide a novel new tool for simulating societies, which may help shed some light on various kinds of social processes. ⚫This has analogies with the interest in “theories of the mind” explored by some artificial intelligence researchers"
+    },
+    {
+        "chunk_id": 66,
+        "page": 54,
+        "text": "Standards: FIPA (www.fipa.org) ⚫International Agent Standard ◼Started in 1996 to provide agent technology specifications. ◼Part of IEEE (since 2005) as 11th standards committee. ⚫Includes standards for ◼Communication: Agent Communication Languages, Content Languages, Semantic Framework ◼Infrastructure: directories, message transport, naming, etc… ⚫Recent trends ◼Moved toward web technology (XML, RDF, HTTP) ◼Plug and Play architectures ◼Moves for Java standard ⚫Next phase ◼Verification ◼Significant take-up ◼Demonstration of Value"
+    },
+    {
+        "chunk_id": 67,
+        "page": 55,
+        "text": "Hot topic 1: Open Service Environments ⚫Explosion of Agent technology with new uses for Open Service Environments / Microservices ⚫Automation of Services ◼Proactive, responsible, intelligent, peer to peer ⚫Dynamic Composition of Services ◼Automated discovery, automated coordination, “Just in Time” Enterprises, Virtual Companies ⚫Semantics ◼HTML won’t do anymore ◼“Semantic Web” ◼Service-level semantics ◼Semantics for E-commerce ◼Service-Oriented Architectures’ frameworks"
+    },
+    {
+        "chunk_id": 68,
+        "page": 56,
+        "text": "Hot topic 2: AI in SocioTechnical Systems"
+    },
+    {
+        "chunk_id": 69,
+        "page": 57,
+        "text": "Hot topic 2: AI in SocioTechnical Systems"
+    },
+    {
+        "chunk_id": 70,
+        "page": 58,
+        "text": "Hot topic 2: AI in SocioTechnical Systems"
+    },
+    {
+        "chunk_id": 71,
+        "page": 59,
+        "text": "Agent types and architectures •Agent properties •Environment properties •Agent types •Abstract architecture"
+    },
+    {
+        "chunk_id": 72,
+        "page": 60,
+        "text": "Agent Properties Autonomy ⚫An agent is a computer system capable of autonomous action in some environment in order to meet its design objectives ⚫Usually the environment is complex and dynamic, and agents should interact with it in real time. o Main property: Autonomous capable of acting independently, exhibiting control over their internal state sens ors A ge nt actu ators E N V I R O N M E N T action perception"
+    },
+    {
+        "chunk_id": 73,
+        "page": 61,
+        "text": "Agent Properties Autonomy, Flexibility ⚫Trivial (non-interesting) agents: ◼thermostat ⚫Def. 2: An intelligent agent is a computer system capable of flexible autonomous action in some environment ⚫By flexible, we mean: ◼reactive (response capability) ◼pro-active (taking initiative) ◼social (interacting with others)"
+    },
+    {
+        "chunk_id": 74,
+        "page": 62,
+        "text": "Agent Properties Reactivity ⚫If a program’s environment is guaranteed to be fixed, the program need never worry about its own success or failure – program just executes blindly ◼Example of fixed environment: compiler ⚫The real world is not like that: things change, information is incomplete. Many (most?) interesting environments are dynamic ⚫Software is hard to build for dynamic domains: program must take into account possibility of failure – ask itself whether it is worth executing! ⚫A reactive system is one that maintains an ongoing interaction with its environment, and responds to changes that occur in it (in time for the"
+    },
+    {
+        "chunk_id": 75,
+        "page": 62,
+        "text": "that maintains an ongoing interaction with its environment, and responds to changes that occur in it (in time for the response to be useful)"
+    },
+    {
+        "chunk_id": 76,
+        "page": 63,
+        "text": "Agent Properties Proactiveness ⚫Reacting to an environment is easy (e.g., stimulus → response rules) ⚫But we generally want agents to do things for us ⚫Hence goal directed behavior ⚫Pro-activeness = generating and attempting to achieve goals; not driven solely by events; taking the initiative ⚫Recognizing opportunities"
+    },
+    {
+        "chunk_id": 77,
+        "page": 64,
+        "text": "Agent Properties Social Ability ⚫The real world is a multi-agent environment: we cannot go around attempting to achieve goals without taking others into account ⚫Some goals can only be achieved with the cooperation of others ⚫Similarly for many computer environments: witness the Internet ⚫Social ability in agents is the ability to interact with other agents (and possibly humans) via some kind of agent-communication language, and perhaps cooperate with others"
+    },
+    {
+        "chunk_id": 78,
+        "page": 65,
+        "text": "Agent Properties Balancing Reactive and Goal-Oriented Behavior ⚫We want our agents to be reactive, responding to changing conditions in an appropriate (timely) fashion ⚫We want our agents to systematically work towards long-term goals ⚫These two considerations can be at odds with one another ⚫Reactivy vs. Deliberation balance ◼Designing an agent that can balance reactivity and deliberation (reason about long term goals) remains an open research problem"
+    },
+    {
+        "chunk_id": 79,
+        "page": 66,
+        "text": "Other Agent Properties (desireable, not mandatory) ⚫mobility ◼the ability of an agent to move around an electronic network ⚫veracity ◼an agent will not knowingly communicate false information ⚫benevolence ◼agents do not have conflicting goals, and that every agent will therefore always try to do what is asked of it ⚫rationality ◼agent will act in order to achieve its goals, and will not act in such a way as to prevent its goals being achieved — at least insofar as its beliefs permit ⚫learning/adaption ◼agents improve performance over time"
+    },
+    {
+        "chunk_id": 80,
+        "page": 66,
+        "text": "beliefs permit ⚫learning/adaption ◼agents improve performance over time"
+    },
+    {
+        "chunk_id": 81,
+        "page": 67,
+        "text": "Environment properties Accessible vs. inaccessible ⚫An accessible environment is one in which the agent can obtain complete, accurate, up-to-date information about the environment’s state ⚫Most moderately complex environments (including, for example, the everyday physical world and the Internet) are inaccessible ⚫The more accessible an environment is, the simpler it is to build agents to operate in it"
+    },
+    {
+        "chunk_id": 82,
+        "page": 68,
+        "text": "Environment properties Deterministic vs. non-deterministic ⚫A deterministic environment is one in which any action has a single guaranteed effect — there is no uncertainty about the state that will result from performing an action ⚫The physical world can to all intents and purposes be regarded as non- deterministic ⚫Non-deterministic environments present greater problems for the agent designer"
+    },
+    {
+        "chunk_id": 83,
+        "page": 69,
+        "text": "Environment properties Episodic vs. non-episodic ⚫In an episodic environment, the performance of an agent is dependent on a number of discrete episodes, with no link between the performance of an agent in different scenarios ⚫Episodic environments are simpler from the agent developer’s perspective because the agent can decide what action to perform based only on the current episode — it need not reason about the interactions between this and future episodes"
+    },
+    {
+        "chunk_id": 84,
+        "page": 70,
+        "text": "Environment properties Static vs. dynamic ⚫A static environment is one that can be assumed to remain unchanged except by the performance of actions by the agent ⚫A dynamic environment is one that has other processes operating on it, and which hence changes in ways beyond the agent’s control ⚫Other processes can interfere with the agent’s actions (as in concurrent systems theory) ⚫The physical world is a highly dynamic environment"
+    },
+    {
+        "chunk_id": 85,
+        "page": 71,
+        "text": "Environment properties Discrete vs. continuous ⚫An environment is discrete if there are a fixed, finite number of actions and percepts in it ⚫Russell and Norvig give a chess game as an example of a discrete environment, and taxi driving as an example of a continuous one ⚫Continuous environments have a certain level of mismatch with computer systems ⚫Discrete environments could in principle be handled by a kind of “lookup table”"
+    },
+    {
+        "chunk_id": 86,
+        "page": 72,
+        "text": "Agent types Physical (embodied) Agents vs. Software Agents ⚫Software agents’ environment is a virtual one ◼Single machine, intranet, internet ◼Interact with other software agents, with sw modules, services ◼Interact with humans through human interfaces ⚫Physical agents or embodied agents ◼Interact with real world (sensors, actuators connected to real world) ◼Problems of perception and action ◼Best known example: Robots."
+    },
+    {
+        "chunk_id": 87,
+        "page": 73,
+        "text": "Agent types Robots Mobile: air/spacecrafts Mobile: weeled Non-mobile SONY aibo Mobile: legged"
+    },
+    {
+        "chunk_id": 88,
+        "page": 74,
+        "text": "14"
+    },
+    {
+        "chunk_id": 89,
+        "page": 75,
+        "text": "The Hidden Cost: Skills Erode RCT, 52 engineers learning a new Python library, with vs. without AI assistance AI users scored 17% lower on follow-up quiz (~ two letter grades) Gap was most pronounced on debugging, the skill seniors are made of Shen 3 Tamkin (Anthropic, 2026) https://www.anthropic.com/research/AI-assistance-coding-skills “We found that using AI assistance led to a statistically significant decrease in mastery”"
+    },
+    {
+        "chunk_id": 90,
+        "page": 76,
+        "text": "Agents Agents 18"
+    },
+    {
+        "chunk_id": 91,
+        "page": 77,
+        "text": "History of Agents (before 1990) History of Agents (before 1990) ● The word “agent” from Latin agens, late 15th c; “one who acts” ● First indexed “AI use” is from Hewitt, Bishop and Steiger in 1973 \"A Universal Modular ACTOR Formalism,\" IJCAI 1973"
+    },
+    {
+        "chunk_id": 92,
+        "page": 78,
+        "text": "History of Agents (before 1990) History of Agents (before 1990) ● The word “agent” from Latin agens, late 15th c; “one who acts” ● First indexed “AI use” is from Hewitt, Bishop and Steiger in 1973 ● Contract Net Protocol on agents negotiating tasks in 1980 ● Marvin Minsky on the Society of Mind in 1986"
+    },
+    {
+        "chunk_id": 93,
+        "page": 79,
+        "text": "History of Agents (the 1990s) History of Agents (the 1990s) (Pattie Maes, Designing Autonomous Agents, 1994) Wooldridge and Jennings define an agent by autonomy, social ability, reactivity and proactivity (1995) Russell and Norvig's textbook (1995) defines an agent as anything that perceives through sensors and acts through actuators"
+    },
+    {
+        "chunk_id": 94,
+        "page": 80,
+        "text": "History of Agents: the RL Era History of Agents: the RL Era Agent-environment loop (Sutton and Barto, 1998) DQN on Atari (Mnih et al., 2015)"
+    },
+    {
+        "chunk_id": 95,
+        "page": 81,
+        "text": "History of Agents: the LLM Era History of Agents: the LLM Era GPT3 and in context learning"
+    },
+    {
+        "chunk_id": 96,
+        "page": 82,
+        "text": "What LLMs Made Possible: Reasoning and Tool Use What LLMs Made Possible: Reasoning and Tool Use Modular Reasoning, Knowledge and Language (MRKL, 2022)"
+    },
+    {
+        "chunk_id": 97,
+        "page": 83,
+        "text": "The Emergence of “Agents” The Emergence of “Agents” Oct 2022 Nov 30, 2022 Mar 14, 2023 Mar 28, 2023 Mar 30, 2023 ReAct ChatGPT GPT-4 BabyAGI AutoGPT (Yao et al., 2022) https://github.com/yoheinakajima/babyagi_archive"
+    },
+    {
+        "chunk_id": 98,
+        "page": 84,
+        "text": "LLMs Getting Better: Model Capability LLMs Getting Better: Model Capability https://epoch.ai/data-insights/gpt-capabilities-progress"
+    },
+    {
+        "chunk_id": 99,
+        "page": 85,
+        "text": "Agents Getting Better: Agentic Capability Agents Getting Better: Agentic Capability"
+    },
+    {
+        "chunk_id": 100,
+        "page": 86,
+        "text": "Anatomy of an Agent Anatomy of anAgent the model →LLM Core Think[…] →Planning &Reasoning traces so far →Memory Act: →Tools Obs: →Environment (ReAct: Yao et al., 2022)"
+    },
+    {
+        "chunk_id": 101,
+        "page": 87,
+        "text": "Agents: Key Components Agents: Key Components Planning & Reasoning Memory LLM Core Tools Retrieval, Calculator, Code, Search, File Operations… observe Agent actions: tool call, interaction, response to users Environment (external world) Desktop OS, Web browser, Mobile apps, Games, Databases, etc act 30"
+    },
+    {
+        "chunk_id": 102,
+        "page": 88,
+        "text": "Similar Definitions of Agents Similar Definitions of Agents https://lilianweng.github.io/posts/2023-06-23-agent/ Cognitive Language Agents (Sumers and Yao, 2024)"
+    },
+    {
+        "chunk_id": 103,
+        "page": 89,
+        "text": "Agents: Key Components Agents: Key Components Planning & Reasoning Memory LLM Core Tools Retrieval, Calculator, Code, Search, Read/Write Memory… observe Agent actions: tool call, interaction, response to users Environment (external world) Desktop OS, Web browser, Mobile apps, Games, Databases, etc act 89"
+    },
+    {
+        "chunk_id": 104,
+        "page": 90,
+        "text": "Reasoning and Planning Reasoning and Planning Action • For humans: mental processes such as deduction, analogy and planning Observation • For LLMs: intermediate generations that imitate various (but not all) human mental processes • For agents: internal actions that update the agent’s own state 90"
+    },
+    {
+        "chunk_id": 105,
+        "page": 91,
+        "text": "Why is reasoning helpful for agents? Why is reasoning helpful for agents? Obs t You are cooking a dish and seeing salt is out… “The dish should be savory, and since salt is out, I should find the soy sauce instead. It is in the cabinet to my right…” Act Reasoning Obs Act t Turn right Obs t+1 You see a cabinet and a table… Act t+1 Open cabinet Reason to act 1. Generalization 2. Alignment Observation to Action mapping could be hard 91"
+    },
+    {
+        "chunk_id": 106,
+        "page": 91,
+        "text": "could be hard 91"
+    },
+    {
+        "chunk_id": 107,
+        "page": 92,
+        "text": "Reasoning without acting Reasoning without acting Thought: Let's think step by step. Apple Remote was originally designed to interact with Apple TV. Apple TV can be controlled by iPhone, iPad, and iPod Touch. So the answer is iPhone, iPad, and iPod Touch. Answer: iPhone, iPad, iPod Touch Question: Aside from the Apple Remote, what other device can control the program Apple Remote was originally designed to interact with? Standard Answer: iPod Reason Only 92"
+    },
+    {
+        "chunk_id": 108,
+        "page": 93,
+        "text": "Reasoning with acting Reasoning with acting Question: Aside from the Apple Remote, what other device can control the program Apple Remote was originally designed to interact with? ReAct (Reason + Act) Thought 1: I need to search Apple Remote and find the program it was originally designed to interact with. Act 1: Search[Apple Remote] Obs 1: The Apple Remote is a remote control introduced in October 2005 by Apple … originally designed to control Front Row media center the program ……(long text omitted) Thought 2: Apple Remote was originally designed to control the Front Row media center program. I need"
+    },
+    {
+        "chunk_id": 109,
+        "page": 93,
+        "text": "……(long text omitted) Thought 2: Apple Remote was originally designed to control the Front Row media center program. I need to search Front Row next and find what other device can control it. Act 2: Search[Front Row] Obs 2: Could not find [Front Row]. Similar: ['Front Row Seat to Earth', 'Front Row Motorsports','Front Row (software)', …] Front Row (software) Thought 3: Front Row is not found. I need to search . ✓ Act 3: Search[Front Row (software)] Obs 3: Front Row is a discontinued media center software …(long text omitted) Thought 4: Front Row (software) is controlled by an Apple"
+    },
+    {
+        "chunk_id": 110,
+        "page": 93,
+        "text": "Row is a discontinued media center software …(long text omitted) Thought 4: Front Row (software) is controlled by an Apple Remote or the keyboard function keys. So the answer is keyboard function keys. Act 4: Finish[keyboard function keys] 93"
+    },
+    {
+        "chunk_id": 111,
+        "page": 94,
+        "text": "Comparing ReAct with COT, SC Comparing ReAct with COT, SC • ReAct outperforms Act consistently • Hallucination is a serious problem for CoT, and ReAct can help mitigate 94"
+    },
+    {
+        "chunk_id": 112,
+        "page": 95,
+        "text": "Self-Consistency [Wang et al., 2023] Self-Consistency [Wang et al., 2023] • Prompt a language model using chain-of-thought (CoT) prompting • Generate a diverse set of reasoning paths • Aggregate by choosing the most consistent answer in the final answer set"
+    },
+    {
+        "chunk_id": 113,
+        "page": 96,
+        "text": "Reflexion: agents reflect via natural language feedback Reflexion: agents reflect via natural language feedback (Shinn et al., 2023) Reflexion agents verbally reflect on task feedback signals, then maintain their own reflective text to induce better decision-making. 96"
+    },
+    {
+        "chunk_id": 114,
+        "page": 97,
+        "text": "Reflexion: agents reflect via natural language feedback Reduce error cases by using self-reflection to distill long, failed trajectories into relevant experiences that can be used as \"self-hints\" in the future 97"
+    },
+    {
+        "chunk_id": 115,
+        "page": 98,
+        "text": "Du et al., 2023 Multi-agent debate to improve reasoning [Du et al., 2023] Multi-agent debate to improve reasoning [Du et al., 2023]"
+    },
+    {
+        "chunk_id": 116,
+        "page": 99,
+        "text": "Du et al., 2023 Multi-agent debate to improve reasoning [Du et al., 2023]"
+    },
+    {
+        "chunk_id": 117,
+        "page": 100,
+        "text": "Coordinate with Orchestrator https://www.microsoft.com/en-us/research/publication/magentic-one-a-generalist-multi-agent-system-for-solving-complex-tasks/"
+    },
+    {
+        "chunk_id": 118,
+        "page": 101,
+        "text": "Agents: Key Components Planning & Reasoning Memory LLM Core Tools Retrieval, Calculator, Code, Search, Read/Write Memory… observe Agent actions: tool call, interaction, response to users Environment (external world) Desktop OS, Web browser, Mobile apps, Games, Databases, etc act 44"
+    },
+    {
+        "chunk_id": 119,
+        "page": 102,
+        "text": "The Need for Memory The Need for Memory Context window cannot possibly hold all the event streams Even if possible, might be hard to attend to relevant events, or digest over them Generative agents (Park et al., 2025) 45"
+    },
+    {
+        "chunk_id": 120,
+        "page": 103,
+        "text": "Different Types of Memory Different Types of Memory Type by content Definition Examples Episodic memory Stores experience Generative agents [Park et al., 2023] Semantic memory Stores knowledge Procedural memory Stores skills Voyager [Wang et al., 2023] Note: we only categorize based on memory content, which is inspired by human long-term memory systems"
+    },
+    {
+        "chunk_id": 121,
+        "page": 104,
+        "text": "Episodic Memory Episodic Memory • Write: append-only event streams • Read: retrieval based on heuristic scores"
+    },
+    {
+        "chunk_id": 122,
+        "page": 105,
+        "text": "Semantic Memory • Write: LLM reasoning over events • Read: retrieval"
+    },
+    {
+        "chunk_id": 123,
+        "page": 106,
+        "text": "Procedural Memory [Wang et al., 2023] Procedural Memory [Wang et al., 2023] • Write: Code-based skills • Read: Embedding retrieval"
+    },
+    {
+        "chunk_id": 124,
+        "page": 107,
+        "text": "Agents: Key Components Agents: Key Components Planning & Reasoning Memory LLM Core Tools Retrieval, Calculator, Code, Search, Read/Write Memory… Agent actions: tool call, interaction, response to users Environment (external world) observe Desktop OS, Web browser, Mobile apps, Games, Databases, etc act 107"
+    },
+    {
+        "chunk_id": 125,
+        "page": 108,
+        "text": "Toolformer Toolformer: LLMs can teach themselves to use tools Toolformer: LLMs can teach themselves to use tools • Toolformer trains LMs to decide which APIs to call, when to call them, what arguments to pass, and how to best incorporate the results. • Tools: calculator, Q&A system, search engine, translation system, calendar. 108"
+    },
+    {
+        "chunk_id": 126,
+        "page": 109,
+        "text": "(Patil et al., 2023) Gorilla: LLMs connected with massive APIs (Patil et al., 2023) Gorilla: LLMs connected with massiveAPIs (Patil et al., 2023) 109"
+    },
+    {
+        "chunk_id": 127,
+        "page": 110,
+        "text": "Putting It All Together: Skeleton of an Agent Putting It All Together: Skeleton of an Agent Planning & Reasoning Memory LLM Core Tools Retrieval, Calculator, Code, Search, Read/Write Memory… observe Agent actions: tool call, interaction, response to users Environment (external world) Desktop OS, Web browser, Mobile apps, Games, Databases, etc act 110"
+    },
+    {
+        "chunk_id": 128,
+        "page": 111,
+        "text": "Agents: Three Layers Agents: Three Layers Despite many components, agent engineering can be divided into: The system (architecture design etc.) The data (training examples, demonstrations, context) The evals ( + the metric)"
+    },
+    {
+        "chunk_id": 129,
+        "page": 112,
+        "text": "Workflows vs. Agents: Who Decides the Steps? Workflows vs.Agents: Who Decides the Steps? Both are compoundAI systems: an LLM plus other components • Workflow: code fixes the steps (e.g., Agentless, AlphaCode 2) • Agent: the LLM decides the steps (e.g., SWE-agent) AlphaCode2: fine-tuned LLMs for sampling and scoring programs; code execution module. It generates up to 1 million solutions for a coding problem then filters and scores them. Zaharia et al., The Shift from Models to Compound AI Systems, BAIR, 2024 (https://bair.berkeley.edu/blog/2024/02/18/compound-ai-systems/)"
+    },
+    {
+        "chunk_id": 130,
+        "page": 112,
+        "text": "2024 (https://bair.berkeley.edu/blog/2024/02/18/compound-ai-systems/)"
+    },
+    {
+        "chunk_id": 131,
+        "page": 113,
+        "text": "Retrieval Augmented Generation (RAG) Retrieval Augmented Generation (RAG) RAG connects LLMs to external knowledge sources in real-time 1. RETRIEVE Search your documents for relevant info 2.AUGMENT Add context to the user's question 3. GENERATE LLM answers using retrieved facts"
+    },
+    {
+        "chunk_id": 132,
+        "page": 114,
+        "text": "Tool Use: Anatomy of a Call Tool Use: Anatomy of a Call Select which tool, from the schemas in context → Arguments typed fields, filled from the task → Validate schema check, constrained decoding → Execute sandboxed; result returns to context Example: “What does test.py contain?” read_file Chosen from the tools in context {“path”: “test.py”} filled from the task path: string checked before the call def add(a, b): … returned to context"
+    },
+    {
+        "chunk_id": 133,
+        "page": 115,
+        "text": "Model Context Protocol (MCP) Model Context Protocol (MCP) https://modelcontextprotocol.io/docs/2026-07-28/learn/architecture"
+    },
+    {
+        "chunk_id": 134,
+        "page": 116,
+        "text": "Key Challenges in Building Agents Key Challenges in Building Agents Reliability Errors compound in agent setup Training Sparse reward, long horizon, expensive rollouts Long-horizon Context grows and drifts Safety Task success ≠safe behavior Evaluation What and how to evaluate"
+    },
+    {
+        "chunk_id": 135,
+        "page": 117,
+        "text": "Reliability vs Evaluation Reliability vs Evaluation 01 Consistency across runs Do agents produce the same outcome when given the same task twice? 02 Robustness to perturbations How do agents respond to small, realistic shifts in prompts, tools, etc? 03 Predictable failure modes When agents fail, do they fail in legible, recoverable ways or unpredictably https://hal.cs.princeton.edu/"
+    },
+    {
+        "chunk_id": 136,
+        "page": 118,
+        "text": "The Capability-Reliability Gap The Capability-Reliability Gap HAL Reliability Dashboard (https://hal.cs.princeton.edu/reliability/)"
+    },
+    {
+        "chunk_id": 137,
+        "page": 119,
+        "text": "Task Completion ≠ Safety Compliance Task Completion ≠Safety Compliance HarnessAudit Bench (https://harnessaudit.github.io/) 64"
+    },
+    {
+        "chunk_id": 138,
+        "page": 120,
+        "text": "Lack of Collaboration Awareness and Agency Lack of Collaboration Awareness and Agency https://www.platformer.news/openai-operator-ai-agent-hands-on/"
+    },
+    {
+        "chunk_id": 139,
+        "page": 121,
+        "text": "Adversarial Attacks Adversarial Attacks Pop-ups for agents lead to 87% attack success rate (i.e., AI agents get distracted and can’t finish the original task) Zhang, Yanzhe, Tao Yu, and Diyi Yang. \"Attacking Vision-Language Computer Agents via Pop-ups.\" arXiv preprint arXiv:2411.02391 (2024)."
+    },
+    {
+        "chunk_id": 140,
+        "page": 122,
+        "text": "Privacy and Security Concerns Shao, Yijia, Tianshi Li, Weiyan Shi, Yanchen Liu, and Diyi Yang. \"PrivacyLens: Evaluating Privacy Norm Awareness of Language Models in Action.” NeurIPS D&B 2024"
+    },
+    {
+        "chunk_id": 141,
+        "page": 123,
+        "text": "Misalignment and Sycophancy Misalignment and Sycophancy Misalignment and Sycophancy https://www.anthropic.com/research/reward-tampering"
+    },
+    {
+        "chunk_id": 142,
+        "page": 124,
+        "text": "Multi-agent Collusion Multi-agent Collusion https://metr.org/blog/2026-08-26-openai-hugging-face-incident-investigation/#core-takeaways-about-this-incident"
+    },
+    {
+        "chunk_id": 143,
+        "page": 125,
+        "text": "Multi-agent Collusion"
+    },
+    {
+        "chunk_id": 144,
+        "page": 126,
+        "text": "Agent types Example of state-of-art Agent technology: Mars Robots"
+    },
+    {
+        "chunk_id": 145,
+        "page": 127,
+        "text": "Agent Types Software agents ⚫Internet agents (search and information extraction/management from Internet) ⚫Collaborative agents (they coordinate with other agents to solve a common task) ◼To solve problems too complex for a single agent ◼To solve problemes distributed in nature ◼To interconnect already existing, heterogeneous systems (→ Agentification) ⚫Interface agents (they collaborate with a human user to solve a task, or to act on behalf of the user. ⚫Mobile SW agents (they can move from one computer to another)"
+    },
+    {
+        "chunk_id": 146,
+        "page": 128,
+        "text": "Agent types Internal architecture ⚫Purely Reactive Agents (with no internal state) ⚫Reactive Agents with internal state ⚫Delliberative Agents (goal-oriented behaviour) ⚫Hybrid Agents (combine reactive and delliberative behaviour)"
+    },
+    {
+        "chunk_id": 147,
+        "page": 129,
+        "text": "Purely Reactive Agents (AIMA: Simple reflex agents) Agent sensors E0 KB How should I react? E N V I R O N M E N T actuators perception perception’ action input"
+    },
+    {
+        "chunk_id": 148,
+        "page": 130,
+        "text": "Purely Reactive Agents (AIMA: Simple reflex agents) function pra(percept) returns (action) static rules state interpret-input(percept) rule rule-match(state,rules) action rule-action[rule] return action"
+    },
+    {
+        "chunk_id": 149,
+        "page": 131,
+        "text": "Reactive Agents with internal state (AIMA: Model-based reflex agents) Agent sensors KB Which action do I choose? E N V I R O N M E N T actuators perception state How is the world now? How the world works? What is the effect of actions? action input"
+    },
+    {
+        "chunk_id": 150,
+        "page": 132,
+        "text": "Reactive Agents with internal state (AIMA: Model-based reflex agents) Function reactive-agent-with-state(percept) returns action Static state ;a world description rules ;a set of, e.g., if-then rules state rule action state update-state(state,percept) rule-match(state,rules) rule-action[rule] update-state(state,action) return action"
+    },
+    {
+        "chunk_id": 151,
+        "page": 133,
+        "text": "Tasks for Agents ⚫We build agents in order to carry out tasks for us ⚫The task must be specified by us… ⚫But we want to tell agents what to do without telling them how to do it ⚫One possibility: associate utilities with individual states — the task of the agent is then to bring about states that maximize utility"
+    },
+    {
+        "chunk_id": 152,
+        "page": 134,
+        "text": "KB E N V I R O N M E N T Delliberative Agents (with expected utilities) (AIMA: Utility-based agents) Agent state perception How is the world now? utility Which action do I choose? How the world evolves? What if I perform What is the effect action A? of actions? How happy will I be? sensors input action actuators"
+    },
+    {
+        "chunk_id": 153,
+        "page": 135,
+        "text": "Utility Functions over States ⚫A task specification is a function u : E → # which associates a real number with every environment state ⚫But what is the value of a run… ◼minimum utility of state on run? ◼maximum utility of state on run? ◼sum of utilities of states on run? ◼average? ⚫Disadvantage: difficult to specify a long term view when assigning utilities to individual states (One possibility: a discount for states later on.)"
+    },
+    {
+        "chunk_id": 154,
+        "page": 136,
+        "text": "Utilities over Runs ⚫Another possibility: assigns a utility not to individual states, but to runs themselves: u : R → # ⚫Such an approach takes an inherently long term view ⚫Other variations: incorporate probabilities of different states emerging ⚫Difficulties with utility-based approaches: ◼where do the numbers come from? ◼we don’t think in terms of utilities! ◼hard to formulate tasks in these terms"
+    },
+    {
+        "chunk_id": 155,
+        "page": 137,
+        "text": "Delliberative Agents (with explicit goals) (AIMA: Goal-based agents) input Agent sensors KB What if I perform action A? E N V I R O N M E N T actuators state perception How is the world now? goals Which action do I choose? How the world evolves? What is the effect of actions? action"
+    },
+    {
+        "chunk_id": 156,
+        "page": 138,
+        "text": "Delliberative Agents (with explicit goals) (AIMA: Goal-based agents) Function reactive-agent-with-goals(percept) returns action Static state ; a world description rules ;a set of, e.g., if-then rules goals ;a list of goal states state appliable-rules possible-actions action state return action update-state(state,percept) rule-match(state,rules) rule-action[rule] goal-oriented-selection[possible-actions] update-state(state,action)"
+    },
+    {
+        "chunk_id": 157,
+        "page": 139,
+        "text": "Adaptative Agents (with critic) (AIMA: Learning agents) Agent sensors Critic E N V I R O N M E N T actuators input performance standard perception feedback Learning element Performance element (agent’) changes knowledge learning goals Problem generator action"
+    },
+    {
+        "chunk_id": 158,
+        "page": 140,
+        "text": "LLM-based systems vs. Agentic systems ⚫A Large Language Model (LLM) is the statistical text-generating component, typically a Transformer trained to predict the next token given a context. ⚫In recent practice, however, tasks are rarely solved by an LLM in isolation; solutions are produced by an LLM-based system ◼wraps the model with prompts, control logic, optional memory ◼(in agentic settings) adds tool interfaces. ⚫Agentic AI is a term used in an inconsistent manner, but it tipically refers to systems where: ◼instead of asking the model for a single answer to a query, the system runs the model on multiple queries, with"
+    },
+    {
+        "chunk_id": 159,
+        "page": 140,
+        "text": "of asking the model for a single answer to a query, the system runs the model on multiple queries, with intermediate outputs inspected and used to decide what to do next"
+    },
+    {
+        "chunk_id": 160,
+        "page": 141,
+        "text": "Agentic Systems vs. Agents ⚫Currently “Agentic AI” term is applied to two different architectures: ◼entirely internal loop: the model drafts, critiques, and revises, or explores multiple candidate lines of reasoning before selecting an answer without inspection/modification of the environment ◼external loop: the loop is based in an environment external to the system: the model queries tools, observes results, and iteratively updates its actions based on feedback from the world"
+    },
+    {
+        "chunk_id": 161,
+        "page": 142,
+        "text": "Agentic Systems vs. Agents"
+    },
+    {
+        "chunk_id": 162,
+        "page": 143,
+        "text": "Some Agent architectures in “Agentic AI” ReAct Reflection Architecture Critic-guided ReAct"
+    },
+    {
+        "chunk_id": 163,
+        "page": 144,
+        "text": "Multiagent Systems’ architecture ⚫Agents in a multiagent system tend to interact through a middleware layer ⚫This middleware provides connectivity between agents, solving low- level connectivity issues, including: ◼Updated environment state (after agents’ actions) ◼Environmental (partial) perception ◼Environmental resource usage ◼Communication methods ⚫In FIPA IEEE standard: this middleware is called agent platform"
+    },
+    {
+        "chunk_id": 164,
+        "page": 145,
+        "text": "Multiagent Systems’ architecture FIPA Agent Platform"
+    },
+    {
+        "chunk_id": 165,
+        "page": 146,
+        "text": "Social Ability Why agent communication? ⚫In order to solve distributed problems, agents need to coordinate (cooperate, compete) with others. ⚫For this Agents need to communicate ⚫Goals for Agent Communication: ◼Agents able to request (to other ags.) actions or services that they cannot perform by themselves ◼Agents able to ask for information (to other ags.) ◼Agents able to share their beliefs with other ags. ◼Agents able to coordinate with other ags. To solve complex tasks."
+    },
+    {
+        "chunk_id": 166,
+        "page": 147,
+        "text": "Communication methods ⚫Blackboard systems ◼Agents communicate information through a common data structure, accessible by everybody ◼Problem: if there is no middleware to provide some concurrency, it tends to become a bottleneck. ⚫Message passing ◼Agents communicate directly by means of messages ◼The agent platform usually acts as message router ◼Common communication language (e.g. FIPA-ACL) ◼Common communication protocols (message format, steps in a communication)"
+    },
+    {
+        "chunk_id": 167,
+        "page": 148,
+        "text": "Levels in Agent Communication ⚫Four levels in communication (FIPA IEEE standard): ◼Message Semantics •What does each message means? •3 components –Message type (performative): gives intensionality –Message content: contains the information –Ontology (the message refers to) ◼Message Sintaxis •How each message is expressed? •2 components –Message structure: Agent Communication Language –Content codification: Content Language ◼Interaction protocol •How are conversations/dialogues structured? –Agent Protocols ◼Transport protocol •How messages are actually sent and received by agents?"
+    },
+    {
+        "chunk_id": 168,
+        "page": 149,
+        "text": "Scan Here to Mark Your Attendance"
+    },
+    {
+        "chunk_id": 169,
+        "page": 150,
+        "text": "Thank You Questions and Discussion This concludes our introduction to agent-based systems. The concepts discussed today establish the essential foundation for understanding how agents operate, interact, and influence system behavior. These fundamentals will support our ability to design, analyze, and simulate agent-based models effectively in more complex scenarios. As we progress through this course, these foundational principles of agent-based systems will be applied to increasingly complex scenarios across diverse domains such as computer science, engineering, and artificial intelligence. Your ability to master these basics will be critical to your success in developing and analyzing advanced agent-based models and applications. Office"
+    },
+    {
+        "chunk_id": 170,
+        "page": 150,
+        "text": "to master these basics will be critical to your success in developing and analyzing advanced agent-based models and applications. Office Hours: Available for questions about course material, project ideas, or software installation assistance. Next Session: Chapter 2 - Agents and Environments Dr. Amr A. Hassanain - Fall 2026 Agent Based Systems AI314"
+    }
+]

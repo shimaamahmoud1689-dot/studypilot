@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>StudyPilot AI</title>
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='9' fill='%238B5CFF'/%3E%3Cpath d='M24 8 14 18M24 8l-6 16-3-7-7-3z' fill='none' stroke='%23fff' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@600;800&family=Manrope:wght@400;500;700&family=Cairo:wght@400;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="static/css/style.css"></head>
+<body>
+<aside>
+ <div class="logo"><i><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#06071A" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M22 2 11 13M22 2l-7 20-4-9-9-4z"/></svg></i>StudyPilot</div>
+ <nav aria-label="Main"><button data-v="upload" class="on">Upload</button><button data-v="summary">Summary</button><button data-v="quiz">Quiz</button><button data-v="ask">Ask AI</button><button data-v="progress">Progress</button></nav>
+ <div class="side"><span id="docName">No lecture yet</span><label class="mode"><input type="checkbox" id="demo"> Demo mode</label><button class="lang" id="lang" type="button">العربية</button></div>
+</aside>
+<main>
+ <section id="v-upload" class="on">
+  <div class="hero"><div>
+   <h1>Your lecture, upgraded.</h1>
+   <p class="sub">Upload a PDF and StudyPilot summarizes it, quizzes you on it, and answers your questions with the page number it found them on.</p>
+   <label class="drop" id="drop" tabindex="0">
+    <svg viewBox="0 0 64 64" fill="none"><rect x="12" y="6" width="34" height="46" rx="6" fill="rgba(34,228,255,.1)" stroke="#22E4FF" stroke-width="3"/><path d="M22 20h14M22 28h14M22 36h8" stroke="#22E4FF" stroke-width="3" stroke-linecap="round"/><circle cx="46" cy="46" r="12" fill="#8B5CFF"/><path d="M46 52v-12m-5 5 5-5 5 5" stroke="#fff" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    <b>Drop your lecture PDF here</b><small>or click to choose a file (PDF, up to 20 MB)</small>
+    <input type="file" id="file" accept="application/pdf,.pdf" hidden>
+   </label>
+   <div class="row"><span class="chip" id="chosen" hidden></span><button class="btn" id="go" disabled>Upload and analyze</button></div>
+   <div class="bar" id="bar"><i></i></div>
+  </div>
+  <div class="orbit" aria-hidden="true"><i></i><i></i><i></i><b><svg width="38" height="38" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 2 11 13M22 2l-7 20-4-9-9-4z"/></svg></b></div>
+  </div>
+ </section>
+ <section id="v-summary"><h2>Summary</h2><p class="sub">The main ideas from your lecture.</p><div id="sumBody"></div></section>
+ <section id="v-quiz"><h2>Quiz</h2><p class="sub">Multiple-choice questions generated from your lecture.</p><div id="quizBody"></div></section>
+ <section id="v-ask"><h2>Ask AI</h2><p class="sub">Ask about any concept. Answers come from your lecture, with page references.</p>
+  <div class="card"><div class="chat" id="chat" aria-live="polite"></div>
+   <div class="row" id="sugg"><button class="chip">What are the main ideas?</button><button class="chip">Explain the key terms simply</button></div>
+   <div class="ask"><input id="q" placeholder="Type your question" aria-label="Your question"><button class="btn" id="send">Ask</button></div></div></section>
+ <section id="v-progress"><h2>Progress</h2><p class="sub">Your quiz scores and the topics to review.</p><div id="progBody"></div></section>
+</main>
+<div id="toast" role="status"></div>
+<script src="static/js/app.js"></script></body></html>
